@@ -1,0 +1,136 @@
+body {
+  background-color: plum;
+  padding-top: 70px;
+}
+
+.game{
+  width:50vw;
+  height: 80vh;
+  margin:auto;
+
+  background-color: aliceblue;
+  border: 2px solid black;
+  border-radius: 20px;
+
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+  "header header header"
+  "player board winner"
+  "restart restart restart";
+}
+
+h1{
+  grid-area: header;
+
+  margin:auto;
+
+  font-weight: 1000;
+  font-size: 80px;
+  color:blueviolet;
+  -webkit-text-stroke: 2px hotpink;
+  text-shadow: 0 0 12px rgb(139, 1, 74);
+}
+
+h2{
+  font-weight: 1000;
+  font-size: 30px;
+  color:blueviolet;
+  -webkit-text-stroke: 1px hotpink;
+  letter-spacing: 1px;
+
+  width:fit-content;
+  margin:auto
+}
+
+h3{
+  font-size:100px;
+  font-family:monospace;
+  font-weight: 1000;
+  color:darkorchid;
+  -webkit-text-stroke: 1px plum;
+  text-shadow: 2px 2px 8px darkorchid;  
+
+  width:fit-content;
+  margin:auto
+}
+
+.player-info{
+  grid-area: player;
+
+  margin:auto;
+} 
+
+.winner-info{
+  grid-area: winner;
+
+  margin:auto;
+}
+
+.gameboard{
+  grid-area: board;
+  border:2px solid darkslateblue;
+  border-radius: 8px;
+  background-color: white;
+
+  width:fit-content;
+  height:fit-content;
+  margin:auto;
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cell{
+  border: 1px solid plum;
+  width: 120px;
+  height:120px;
+}
+
+.pink{
+  width:fit-content;
+  margin:auto;
+  
+  font-family:monospace;
+  font-size: 100px;
+  font-weight: 1000;
+  color: hotpink;
+  -webkit-text-stroke: 1px pink;
+  text-shadow: 3px 3px 8px deeppink;
+}
+
+.purple{
+  width:fit-content;
+  margin:auto;
+  
+  font-family:monospace;
+  font-size: 100px;
+  font-weight: 1000;
+  color: darkorchid;
+  -webkit-text-stroke: 1px plum;
+  text-shadow: 3px 3px 8px darkorchid;
+}
+
+button{
+  width:fit-content;
+  font-weight: 600;
+  font-size: 20px;
+  color: pink;
+  background-color: darkviolet;
+  border: none;
+  border-radius: 8px;
+  padding:8px;
+
+  margin-left:183%;
+}
+
+button:hover{
+  background-color:blueviolet;
+}
+
+button:active{
+  background-color: darkviolet 80%;
+}
