@@ -114,6 +114,19 @@ h3{
   text-shadow: 3px 3px 8px darkorchid;
 }
 
+.blue{
+  width:fit-content;
+  margin:auto;
+  
+  font-family:monospace;
+  font-size: 100px;
+  font-weight: 1000;
+  color:mediumblue;
+  -webkit-text-stroke: 1px cornflowerblue;
+  text-shadow: 3px 3px 8px blue;
+
+}
+
 button{
   width:fit-content;
   font-weight: 600;
